@@ -98,11 +98,6 @@ This project utilizes the **YouTube Data API v3** to extract detailed video data
 | AI Tools Overview   | 120,000 | 4,500   | 230      | 12:15    | https://youtu.be/xxxxx       |
 | ML Tutorial Basics  | 98,000  | 3,200   | 190      | 10:03    | https://youtu.be/yyyyy       |
 
----
-
-## 📈 Sample Dashboard
-
-![Power BI Dashboard Screenshot](assets/powerbi_dashboard.png)
 
 ---
 
