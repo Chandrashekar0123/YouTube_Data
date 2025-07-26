@@ -1,41 +1,117 @@
-Accessing and Analyzing YouTube Data
+# 📺 YouTube Playlist Data Extraction and Visualization
+
+## 🧩 Problem Statement
+
+YouTube provides vast amounts of content, but analyzing channel or playlist performance manually is inefficient. Content creators and analysts need an automated way to extract key metrics (views, likes, comments, durations) and visualize them for insights into audience engagement and video performance.
+
+---
+
+## 📌 Project Description
+
+This project utilizes the **YouTube Data API v3** to extract detailed video data from one or more YouTube playlists. The extracted data is then processed using Python and visualized using **Power BI**. The result is a structured Excel file and interactive dashboards that offer clear insights into the performance of videos within a playlist or channel.
+
+---
+
+## 🧠 Approach
+
+### 1. 🔑 API Setup
+- Enable **YouTube Data API v3** from [Google Cloud Console](https://console.cloud.google.com/)
+- Generate an API Key for access
+
+### 2. 🧪 Data Extraction
+- Input: List of YouTube Playlist IDs or URLs
+- Output: Video-level data including:
+  - `Video Title`
+  - `Video ID`
+  - `Published Date`
+  - `Duration` (parsed from ISO 8601)
+  - `View Count`
+  - `Like Count`
+  - `Comment Count`
+  - `Video URL`
+
+### 3. 🧹 Data Processing
+- Clean and normalize the API responses
+- Convert duration from ISO 8601 to readable format (hh:mm:ss)
+- Export to `.xlsx` using `pandas`
+
+### 4. 📊 Data Visualization
+- Use Power BI to create dashboards:
+  - **Top videos by views**
+  - **Likes vs. Comments scatter plot**
+  - **Engagement per minute**
+  - **Monthly performance trends**
+
+---
+
+## 🛠️ Tech Stack
+
+| Category       | Tools Used                                      |
+|----------------|--------------------------------------------------|
+| API            | YouTube Data API v3                              |
+| Programming    | Python (Pandas, Requests, JSON)                  |
+| Output Format  | Excel (XLSX)                                     |
+| Visualization  | Power BI                                         |
+
+---
 
 
-The YouTube Data API allows developers to retrieve insights about videos, playlists, and channels, including metrics like views, likes, comments, and metadata such as titles and upload dates. This enables applications like content analysis, visualization, and performance tracking.
+## 🚀 Features
 
-Steps to Access and Analyze Data
+- 🎥 Fetch video details from YouTube playlists
+- 📊 Analyze metrics like views, likes, comments, and durations
+- 📁 Export structured data to Excel (CSV/XLSX)
+- 📈 Visualize trends with Power BI dashboards
+- 🔍 Identify top-performing videos & viewer engagement
 
-API Key: Enable the YouTube Data API in the Google Cloud Console and generate an API key.
-Data Retrieval: Use Python to fetch video details and statistics (e.g., views, likes) from playlists using API endpoints like playlistItems and videos.
+---
 
-Data Parsing: Process the JSON response to extract details like video titles, descriptions, and engagement metrics.
+## 🧠 Workflow
 
-Export: Save the processed data into an Excel file using pandas.
+1. **API Key Setup**
+   - Enable the **YouTube Data API** in [Google Cloud Console](https://console.cloud.google.com/)
+   - Generate an API key
+
+2. **Data Extraction**
+   - Use `playlistItems` and `videos` endpoints to extract:
+     - `title`, `videoId`, `description`, `publishedAt`
+     - `viewCount`, `likeCount`, `commentCount`, `duration`
+
+3. **Data Cleaning & Export**
+   - Clean JSON responses
+   - Parse durations and convert ISO 8601 format
+   - Save output to Excel using `pandas`
+
+4. **Visualization in Power BI**
+   - Import Excel into Power BI
+   - Create dashboards:
+     - Top videos by views
+     - Likes vs. comments scatter plots
+     - Video durations vs. engagement bar charts
+
+---
+
+## 📂 Output Example
+
+| Title               | Views   | Likes   | Comments | Duration | URL                         |
+|---------------------|---------|---------|----------|----------|------------------------------|
+| AI Tools Overview   | 120,000 | 4,500   | 230      | 12:15    | https://youtu.be/xxxxx       |
+| ML Tutorial Basics  | 98,000  | 3,200   | 190      | 10:03    | https://youtu.be/yyyyy       |
+
+---
+
+## 📈 Sample Dashboard
+
+![Power BI Dashboard Screenshot](assets/powerbi_dashboard.png)
+
+---
+
+## 📌 Applications
+
+- **Content Strategy**: Understand audience engagement
+- **Trend Monitoring**: Track top-performing content
+- **Channel Optimization**: Data-driven video planning
+
+---
 
 
-Visualization with Power BI
-
-Import the Excel file into Power BI.
-
-Create interactive dashboards to visualize trends in views, likes, and comments.
-
-Use scatter plots and bar charts to identify top-performing videos and audience engagement patterns.
-
-
-Output Highlights
-
-Key Metrics: Titles, descriptions, video URLs, views, likes, dislikes, comments, and durations.
-
-Interactive Insights: Identify popular videos and trends visually.
-
-
-Applications
-
-Content Analysis: Measure video performance and engagement.
-
-Trend Analysis: Explore trending topics and campaigns.
-
-Channel Management: Monitor and organize playlist content effectively.
-
-
-By combining the YouTube API with Power BI, this approach streamlines data collection, analysis, and visualization for actionable insights.
