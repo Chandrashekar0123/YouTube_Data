@@ -13,10 +13,6 @@ This project utilizes the **YouTube Data API v3** to extract detailed video data
 ---
 ## 🎬 Demo Video
 
-## 🎬 Demo Video
-
-To showcase the workflow and final dashboards, a demonstration video is included:
-
 <video width="600" controls>
   <source src="https://raw.githubusercontent.com/Chandrashekar0123/YouTube_Data/main/Demo_Video.mp4" type="video/mp4">
   Your browser does not support the video tag.
@@ -27,8 +23,6 @@ To showcase the workflow and final dashboards, a demonstration video is included
 - Data extraction process
 - Excel output preview
 - Power BI dashboard demonstration
-
-
 ---
 
 ## 🧠 Approach
