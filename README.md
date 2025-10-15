@@ -15,7 +15,7 @@ This project utilizes the **YouTube Data API v3** to extract detailed video data
 
 To showcase the workflow and final dashboards, a demonstration video is included:
 
-📁 Path: [Demo_Video.mp4](./Demo_Video.mp4)
+📁 Watch Here: [▶ Demo_Video.mp4](Demo_Video.mp4)
 
 ✅ The video walkthrough includes:
 - API setup and authentication
