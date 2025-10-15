@@ -11,24 +11,17 @@ YouTube provides vast amounts of content, but analyzing channel or playlist perf
 This project utilizes the **YouTube Data API v3** to extract detailed video data from one or more YouTube playlists. The extracted data is then processed using Python and visualized using **Power BI**. The result is a structured Excel file and interactive dashboards that offer clear insights into the performance of videos within a playlist or channel.
 
 ---
-<h2>🎬 Demo Video</h2>
-<p>To showcase the workflow and final dashboards, a demonstration video is included:</p>
-<p><b>📁 Path:</b> Demo_Video.mp4</p>
+## 🎬 Demo Video
 
-<!-- ✅ Directly playable video -->
-<video controls width="600">
-    <source src="YouTube_Data
-/Demo_Video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+To showcase the workflow and final dashboards, a demonstration video is included:
 
-<p><b>✅ The video walkthrough includes:</b></p>
-<ul>
-    <li>API setup and authentication</li>
-    <li>Data extraction process</li>
-    <li>Excel output preview</li>
-    <li>Power BI dashboard demonstration</li>
-</ul>
+[▶ Watch Demo Video](https://github.com/Chandrashekar0123/YouTube_Data/blob/main/Demo_Video.mp4?raw=true)
+
+✅ The video walkthrough includes:
+- API setup and authentication
+- Data extraction process
+- Excel output preview
+- Power BI dashboard demonstration
 
 ---
 
